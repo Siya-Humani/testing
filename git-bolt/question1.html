@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="https://bolt.eu/en-za/cities/johannesburg/" class="logo-link">
+            <img src="/assets/boltlogo.png" alt="logo" class="bolt">
+        </a>
+    </div>
+    
+    <div id="block-container">
+        <!-- Question 1 -->
+        <div class="quiz-question" id="question-1">
+            <h1 class="heading">Who was the first black woman to become a pilot in South Africa?</h1>
+            <div class="block1"><div class="options" onclick="answerQuestion(1,1)"><h2>Asnath Mahapa</h2></div></div>
+            <div class="block2"><div class="options" onclick="answerQuestion(1,0)"><h2>Refliwe Ledwaba</h2></div></div>
+            <div class="block3"><div class="options" onclick="answerQuestion(1,0)"><h2>Siza Mzimela</h2></div></div>
+            <div class="block4"><div class="options" onclick="answerQuestion(1,0)"><h2>Phumzile Mlambo-Ngcaku</h2></div></div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="quiz-question" id="question-2" style="display: none;">
+            <h1 class="heading">Who is the current Minister of Transport in South Africa?</h1>
+            <div class="block1"><div class="options" onclick="answerQuestion(2,0)"><h2>Dipuo Peters</h2></div></div>
+            <div class="block2"><div class="options" onclick="answerQuestion(2,0)"><h2>Fikile Mbalula</h2></div></div>
+            <div class="block3"><div class="options" onclick="answerQuestion(2,1)"><h2>Barbara Creecy</h2></div></div>
+            <div class="block4"><div class="options" onclick="answerQuestion(2,0)"><h2>Naledi Pandor</h2></div></div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="quiz-question" id="question-3" style="display: none;">
+            <h1 class="heading">Who is recognized as the first black female marine pilot in South Africa?</h1>
+            <div class="block1"><div class="options" onclick="answerQuestion(3,1)"><h2>Bongiwe Mbambo</h2></div></div>
+            <div class="block2"><div class="options" onclick="answerQuestion(3,0)"><h2>Zanele Mngadi</h2></div></div>
+            <div class="block3"><div class="options" onclick="answerQuestion(3,0)"><h2>Sobantu Tilay</h2></div></div>
+            <div class="block4"><div class="options" onclick="answerQuestion(3,0)"><h2>Nonhlanhla Mkhize</h2></div></div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="quiz-question" id="question-4" style="display: none;">
+            <h1 class="heading">Who was the first woman to hold a senior management position in the Passenger Rail Agency of South Africa (PRASA)?</h1>
+            <div class="block1"><div class="options" onclick="answerQuestion(4,0)"><h2>Nana Zenani</h2></div></div>
+            <div class="block2"><div class="options" onclick="answerQuestion(4,0)"><h2>Lindelwa Dlamini</h2></div></div>
+            <div class="block3"><div class="options" onclick="answerQuestion(4,0)"><h2>Zama Dube</h2></div></div>
+            <div class="block4"><div class="options" onclick="answerQuestion(4,1)"><h2>Portia Derby</h2></div></div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="quiz-question" id="question-5" style="display: none;">
+            <h1 class="heading">Who was the first woman to be appointed as Chief Executive Officer of Transnet, South Africa’s state-owned freight transport and logistics company?</h1>
+            <div class="block1"><div class="options" onclick="answerQuestion(5,0)"><h2>Poppy Khoza</h2></div></div>
+            <div class="block2"><div class="options" onclick="answerQuestion(5,0)"><h2>Siyabonga Gama</h2></div></div>
+            <div class="block3"><div class="options" onclick="answerQuestion(5,1)"><h2>Portia Derby</h2></div></div>
+            <div class="block4"><div class="options" onclick="answerQuestion(5,0)"><h2>Nonhlanhla Mkhize</h2></div></div>
+        </div>
+    </div>
+    
+    <!-- Results -->
+    <div id="results" style="display: none;">
+        <h1>Quiz Results</h1>
+        <p id="result-message"></p>
+        <button id="try-again" onclick="redirectToURL()" style="display: none;">Try Again</button>
+        <div id="download-images" style="display: none;">
+            <h3>Download Your Woman In Mobility Icon</h3>
+            <div class="download-images">
+                <a href="downloadable_assets/bongiwembambo.jpg" download>
+                    <img src="downloadable_assets/bongiwembambo.jpg" alt="Download Image 1">
+                </a>
+                <a href="downloadable_assets/portiaderby.jpg" download>
+                    <img src="downloadable_assets/portiaderby.jpg" alt="Download Image 2">
+                </a>
+                <a href="downloadable_assets/asnathmahapa.jpg" download>
+                    <img src="downloadable_assets/asnathmahapa.jpg" alt="Download Image 3">
+                </a>
+                <a href="downloadable_assets/sindisiwechikunga.jpg" download>
+                    <img src="downloadable_assets/sindisiwechikunga.jpg" alt="Download Image 4">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

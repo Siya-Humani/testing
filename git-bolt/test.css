@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Euclid Circular';
+    src:url('/fonts/Euclid\ Circular\ A\ Medium.ttf') format('truetype');
+    src:url('/fonts/Euclid\ Circular\ A\ Regular.ttf') format('truetype');
+    src:url('/fonts/Euclid\ Circular\ A\ Light.ttf') format('truetype');
+    src:url('/fonts/Euclid\ Circular\ A\ SemiBold.ttf') format('truetype');
+  }
+
+body {
+    font-family: 'Euclid Circular', sans-serif;
+        background-color: white;
+}
+
+img {
+    width: 5%;
+    height: auto;
+    padding: 20px 10px 15px 20px;
+  }
+
+.block-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quiz-question {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.grid-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    color: white;
+    font-size: 25px; /* Optional: Adjust font size */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+
+.heading {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 38px;
+    font-weight: medium;
+    align-items: center;
+    margin: 0;
+    width: 369px;
+    height: 112px;
+    top: 329px;
+    left: 68px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.block1, .block2, .block3, .block4 {
+    color: white;
+    flex: 50%;
+    width: 423px;
+    height: 485px;   
+    font-size: 35px;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.block1 {
+    background-color: #5B68F6;
+    position:absolute;
+    color: white;
+    display: grid;
+    align-content: right;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight:bold;
+    width: 423px;
+    height: 385px;
+    padding-top: 0;
+    left: 594px;
+    text-align: align;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.block2 {
+    background-color: #EB4755;
+    position:absolute;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight:medium;
+    width: 423px;
+    height: 385px;
+    left: 1017px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.block3 {
+    background-color: #27B973;
+    position:absolute;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight:bold;
+    width: 423px;
+    height: 485px;
+    top: 385px;
+    left: 594px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.block4 {
+    background-color: #FF8800;
+    position:absolute;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight:bold;
+    width: 423px;
+    height: 485px;
+    top: 385px;
+    left:1017px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#results {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+    font-weight:light;
+    align-content: center;
+}
+.hidden {
+    display: none;
+}
+
+#try-again {
+    margin: 50px;
+    justify-conten:center;
+    margin-left: 600px;
+    border: solid;
+    width: 168px;
+    height: 48px;
+    color:white;
+    font-weight: 700px;
+    background-color: #34D186;
+    border-radius: 100px;
+    padding: 12px, 24px, 52px, 24px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#try-again:hover {
+    transform: scale(1.1);
+}
+
+grid-item {
+    size: 38px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.download-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.download-images a {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.download-images img {
+    width: 350px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.download-images img:hover {
+    transform: scale(1.05);
+}
+
+.block1 :hover {
+    transform: scale(1.05);
+}
+.block2 :hover {
+    transform: scale(1.05);
+}
+.block3 :hover {
+    transform: scale(1.05);
+}
+.block4 :hover {
+    transform: scale(1.05);
+}

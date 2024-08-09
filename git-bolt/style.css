@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
+}
+
+/* Regular weight */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic style */
+@font-face {
+  font-family: 'Euclid Circular';
+  src: url('/fonts/Euclid Circular A Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+.bolt {
+  width: 12%;
+  height: auto;
+  padding: 20px 10px 15px 20px;
+}
+
+body {
+  font-family: 'Euclid Circular', sans-serif;
+}
+       
+.custom-link {
+  color:black;
+  text-decoration: underline;
+}
+
+.custom-link:hover {
+  color: #27b973;
+  text-decoration: underline;
+}
+
+.main-image {
+  width: 100%;
+  padding-top: 40px;
+  height: auto;
+  display: none;
+}
+
+h1 {
+  color: #2F313F;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 80px;
+}
+
+h2.right {
+ font-weight: bold;
+ height: 45px;
+ float: right;
+ padding: 20px 10px 15px 20px;
+ color: #2F313F;
+ text-align: right;
+ font-size: 18px;
+ margin-right: 10px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  
+ button {
+    border: solid;
+    width: 168px;
+    height: 48px;
+    position: relative;
+    color:white;
+    font-weight: light;
+    background-color: #34D186;
+    border-radius: 100px;
+    padding: 12px, 24px, 52px, 24px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color:white;
+    color: #34BB78;
+    border-color: #34BB78;
+  }
+
+.container {
+    text-align: center;
+  }
+  
+p.left {
+    font-size: 18px;
+    text-align: justify;
+    color:#747682;
+    float: left;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  h2.left {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: 600px;
+    font-size: 20px;
+  }
+  column1 {
+    padding: auto;
+  }
+  row {
+    box-sizing: border-box;
+  }
+  .column {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row {
+    padding-top: 40px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  div.apps img {
+  width: 135px;
+  float: left;
+  align-content: left;
+  height: auto;
+  display: inline;
+}
+.apps {
+  padding: 5px; /* Adjust the padding value as needed */
+}
+
+.apps img {
+  margin: 0 5px; /* Optional: adds horizontal spacing between icons */
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .headline h1 {
+      font-size: 1.5em;
+  }
+
+  .headline p {
+      font-size: 1em;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  button {
+      font-size: 0.9em;
+  }
+
+  .main-image {
+      max-width: 100%;
+  }
+
+  .apps img {
+      max-width: 100px; /* Adjust size for smaller screens */
+  }
+
+  footer p.left {
+      font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline h1 {
+      font-size: 1.8em;
+  }
+
+  .headline p {
+      font-size: 0.9em;
+  }
+
+  button {
+      padding: 15px;
+      font-size: 1em;
+  }
+
+  .apps img {
+      max-width: 80px; /* Adjust size for very small screens */
+  }
+
+  footer p.left {
+      font-size: 0.7em;
+  }
+}
+/* Base styles to hide both images by default */
+.main-image {
+  display: none;
+}
+
+/* Display the desktop image on larger screens */
+@media (min-width: 768px) {
+  .desktop-image {
+      display: block;
+  }
+}
+
+/* Display the mobile image on smaller screens */
+@media (max-width: 767px) {
+  .mobile-image {
+      display: block;
+  }
+}
+
+
+
+
