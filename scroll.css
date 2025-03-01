@@ -28,10 +28,12 @@
 }
 
 .block1, .block2, .block3, .block4 {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 90%;
-    background-color: aqua;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 .prompt {
