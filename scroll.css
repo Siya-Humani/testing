@@ -7,11 +7,12 @@
 
 .challenge-section {
     padding: 20px;
-    height:100vh;
+    height: 100vh;
 }
 
 .container {
     margin-bottom: 20px;
+    height: 100vh;
 }
 
 .circle {
