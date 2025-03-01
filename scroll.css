@@ -1,0 +1,63 @@
+/* Initially hide all content */
+.container, .prompt, .timerblock, .button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.challenge-section {
+    padding: 20px;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.circle {
+    display: inline-block;
+    background-color: #f39c12;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.block1, .block2, .block3, .block4 {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 90%;
+    background-color: aqua;
+}
+
+.prompt {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.timerblock {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
